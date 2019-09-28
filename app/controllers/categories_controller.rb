@@ -2,7 +2,7 @@ class CategoriesController < ApplicationController
   before_action :load_category, only: :show
 
   def show
-    @questions = @category.questions
+    @questions = @category.questions.page(params[:page]).per Settings.category.page.per
   end
 
   private

@@ -10,4 +10,10 @@ class QuestionDecorator < ApplicationDecorator
   def answer_partial
     @answer_partial ||= "answer_#{answer_type}"
   end
+
+  def total_index page, index
+    page = page > 1 ? page : 1
+    per = Settings.category.page.per
+    @total_index ||= (page - 1) * per + index
+  end
 end

@@ -18,6 +18,7 @@ gem "bootstrap-sass"
 gem "config"
 gem "activerecord-import"
 gem "draper"
+gem "kaminari"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
