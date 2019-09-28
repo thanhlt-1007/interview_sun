@@ -6,5 +6,7 @@
 <h2>Questions</h2>
 
 <% QuestionDecorator.decorate_collection(@questions).each.with_index(1) do |question, index| %>
-  <%= render "question", question: question, index: index %>
+  <%= render "question", question: question, index: index, page: params[:page].to_i %>
 <% end %>
+
+<%= paginate @questions %>

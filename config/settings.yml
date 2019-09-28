@@ -5,3 +5,5 @@ category:
     - Algorithm
     - Webbase
     - OOP
+  page:
+    per: 10
