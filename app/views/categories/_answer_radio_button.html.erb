@@ -1,0 +1,8 @@
+<td>
+  <div class="radio">
+    <label>
+      <%= radio_button_tag :answer, answer_name, question.correct_answers_array.include?(answer_name), disabled: true %>
+      <%= "#{answer_name.upcase}. #{question.send "answer_#{answer_name}"}" %>
+    </label>
+  </div>
+</td>

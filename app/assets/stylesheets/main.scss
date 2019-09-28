@@ -2,3 +2,17 @@
   border-radius: 0;
   margin-bottom: 0;
 }
+
+.jumbotron {
+  margin-top: 20px;
+}
+
+.table-question {
+  table-layout: fixed;
+  margin-top: 30px;
+
+  .radio {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
