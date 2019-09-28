@@ -1,0 +1,21 @@
+<form>
+  <table class="table table-bordered table-question">
+    <thead>
+      <tr>
+        <th colspan="2">
+          <%= "Q#{index}. " %> <%= question.question.question %>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <%= render question.answer_partial, question: question, answer_name: "a" %>
+        <%= render question.answer_partial, question: question, answer_name: "b" %>
+      </tr>
+      <tr>
+        <%= render question.answer_partial, question: question, answer_name: "c" %>
+        <%= render question.answer_partial, question: question, answer_name: "d" %>
+      </tr>
+    </tbody>
+  </table>
+</form>

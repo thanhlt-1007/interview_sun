@@ -17,6 +17,7 @@ gem "jquery-rails"
 gem "bootstrap-sass"
 gem "config"
 gem "activerecord-import"
+gem "draper"
 
 group :development, :test do
   gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
