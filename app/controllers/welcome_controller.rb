@@ -1,3 +1,5 @@
 class WelcomeController < ApplicationController
-  def index; end
+  def index
+    flash[:success] = "Welcome to Interview Sun*"
+  end
 end
