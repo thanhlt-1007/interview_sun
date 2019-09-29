@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 2019_09_28_063549) do
 
   create_table "questions", force: :cascade do |t|
     t.bigint "category_id"
-    t.string "question"
+    t.string "content"
     t.string "answer_a"
     t.string "answer_b"
     t.string "answer_c"
